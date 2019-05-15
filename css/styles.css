@@ -1,0 +1,166 @@
+body {
+  background: #222;
+}
+
+h3 {
+  margin: 4px 0;
+  padding: 5px 0;
+  font-family: arial, sans-serif;
+  width: 100%;
+  color: #fff;
+}
+
+a {
+  font-family: arial, sans-serif;
+  color: #00B2EE;
+  text-decoration: none;
+}
+a:hover {
+  color: #55d4ff;
+}
+
+#map-canvas {
+  width: auto;
+  height: 500px;
+}
+
+#info {
+  color: #222;
+}
+
+.lngLat {
+  color: #fff;
+  margin-bottom: 5px;
+}
+.lngLat .one {
+  padding-left: 250px;
+}
+.lngLat .two {
+  padding-left: 34px;
+}
+
+#clipboard-btn {
+  float: left;
+  margin-right: 10px;
+  padding: 6px 8px;
+}
+
+#info {
+  height: 140px;
+  float: left;
+  margin-bottom: 30px;
+  border: solid 2px #eee;
+}
+
+#info, .lngLat {
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  padding-top: 10px;
+  width: 270px;
+}
+
+/*# sourceMappingURL=styles.css.map */
+
+/* The sidepanel menu */
+.sidepanel {
+  height: 100%; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  width:85%;
+  float:left;
+}
+
+.sidepanel .zoneItem {
+  width:50%;
+  float:left;
+}
+
+.sidepanel .zoneeditpnl{
+  width: 20%;
+  float: right;
+  display:inline-block;
+}
+
+.sidepanel .deletebtn {
+  padding: 0 0 0 0;
+  width:50%;
+}
+
+.sidepanel .editbtn {
+  padding: 0 0 0 0;
+  width:50%;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidepanel span {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel span:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel button {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.sidepanel button:hover {
+  background-color: #444;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}

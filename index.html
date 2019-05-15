@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Smart Traffic Speed Zone Editor</title>
+  <meta name="description" content="Smart Traffic Speed Zone Editor">
+  <meta name="author" content="Berend Vet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body onload="initialize()">
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <button onclick="saveZones()">Save zones</button>
+    <button onclick="setUpZones()">Cancel changes</button>
+    <button onclick="addZone()">Create new zone</button>
+    
+    
+  </div>
+  <button class="openbtn" onclick="openNav()">&#9776; Menu</button> 
+  <div id="map-canvas"></div>
+          
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRkzYMk60URazepj3J7eiVlnJ9qSGKBDQ&callback=initialize">
+  </script>
+  <script language="JavaScript">
+    window.onbeforeunload = confirmExit;
+    function confirmExit()
+    {
+      return "You have attempted to leave this page.  If you have made any changes to the fields without clicking the Save button, your changes will be lost.  Are you sure you want to exit this page?";
+    }
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
+
