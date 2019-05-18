@@ -140,7 +140,7 @@ function renameZone(zone) {
     return;
   } else if(data[newZoneName] != null) {
     alert("Name is taken");
-  } else if(!newZoneName.match(/^[0-9a-zA-Z]{1,16}$/)){
+  } else if(!zone.match(/^[0-9a-zA-Z_ ]{1,32}$/)){
     alert("You can only use letters and numbers");
   } else {
     // delete old reference in database
@@ -172,6 +172,8 @@ function deleteZone(zone) {
 }
 
 function cancelZoneChanges() {
+  // cancel deletion
+  zonesToDelete = [];
   // reload zones from firebase data
   setUpZones();
 }
@@ -195,7 +197,7 @@ function addZone() {
     return;
   } else if(data[zone] != null) {
     alert("Name is taken");
-  } else if(!zone.match(/^[0-9a-zA-Z]{1,16}$/)){
+  } else if(!zone.match(/^[0-9a-zA-Z_ ]{1,32}$/)){
     alert("You can only use letters and numbers");
   } else {
     createZone(zone);
@@ -235,7 +237,7 @@ function createZone(zone) {
 
 /* Set the width of the sidebar to 250px (show it) */
 function openNav() {
-  document.getElementById("mySidepanel").style.width = "300px";
+  document.getElementById("mySidepanel").style.width = "310px";
 }
 
 /* Set the width of the sidebar to 0 (hide it) */
